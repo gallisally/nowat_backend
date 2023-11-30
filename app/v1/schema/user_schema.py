@@ -9,11 +9,11 @@ class UserBase(BaseModel):
         ...,
         example="tuemail@ejemplo.com"
     )
-    nombre: str = Field(
+    username: str = Field(
         ...,
         min_length=3,
         max_length=50,
-        example="tuNombreDeUsuario"
+        example="tuusernameDeUsuario"
     )
 
 #extension de UserBase para retornar info del usuario

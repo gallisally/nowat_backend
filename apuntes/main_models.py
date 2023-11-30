@@ -7,7 +7,7 @@ from app.v1.utils.db import db
 # Modelo `usuarios`
 class Usuarios(peewee.Model):
     id = peewee.AutoField()
-    nombre = peewee.CharField(max_length=100)
+    username = peewee.CharField(max_length=100)
     email = peewee.CharField(max_length=100)
     password = peewee.CharField(max_length=100)
 
@@ -19,7 +19,7 @@ class Usuarios(peewee.Model):
 # Modelo `noticias`
 class Noticias(peewee.Model):
     id = peewee.AutoField()
-    nombre_medio = peewee.CharField(max_length=100)
+    username_medio = peewee.CharField(max_length=100)
     tipo_medio = peewee.CharField(max_length=50)
     url = peewee.CharField(max_length=10000)
     seccion = peewee.CharField(max_length=500)
